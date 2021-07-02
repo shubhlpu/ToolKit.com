@@ -123,7 +123,7 @@ var key= "yNnqOMo1AZcXK8oTTsYEoTphU1y1";
 	var url="https://cricapi.com/api/";
 	var request= new XMLHttpRequest();
 	if (api ==="calender"){
-	request.open("GET","https://cricapi.com/api/matchCalendar/"+key,true);
+	request.open("GET","https://cricapi.com/api/matchCalendar?apikey="+key,true);
 	request.send();
 	request.onreadystatechange= function(){
 		if(this.readyState== 4 && this.status==200)
@@ -136,7 +136,7 @@ var key= "yNnqOMo1AZcXK8oTTsYEoTphU1y1";
 					div.innerHTML +="<p id='cal-data'>"+(restext["data"][x]["name"])+"</p>";}
 				}}}
 	else{
-		request.open("GET","http://cricapi.com/api/cricket?apikey="+key,true);
+		request.open("GET","https://cricapi.com/api/cricket?apikey="+key,true);
 		request.send();
 	request.onreadystatechange= function(){
 		if(this.readyState== 4 && this.status==200)
