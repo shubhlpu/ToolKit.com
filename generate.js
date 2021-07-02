@@ -1,5 +1,4 @@
 function randomGenerate(l){
-	console.log("rajat");
 if (l==="generate"){
 if(window.XMLHttpRequest)
 {
