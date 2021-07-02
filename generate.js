@@ -46,7 +46,7 @@ function convertCurrency (){
 					var restext=JSON.parse(this.responseText);
 					if(restext[res]){
 					document.getElementsByClassName("money")[0].firstChild.innerHTML=howMuch;
-					document.getElementsByClassName("money")[1].firstChild.innerHTML=howMuch*restext[res];
+					document.getElementsByClassName("money")[1].firstChild.innerHTML=(howMuch*restext[res]).toFixed(2);
 	
 					}
 					else{
