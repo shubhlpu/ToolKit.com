@@ -123,7 +123,7 @@ var key= "yNnqOMo1AZcXK8oTTsYEoTphU1y1";
 	var url="https://cricapi.com/api/";
 	var request= new XMLHttpRequest();
 	if (api ==="calender"){
-	request.open("GET","http://cricapi.com/api/matchCalendar/"+key,true);
+	request.open("GET","https://cricapi.com/api/matchCalendar/"+key,true);
 	request.send();
 	request.onreadystatechange= function(){
 		if(this.readyState== 4 && this.status==200)
