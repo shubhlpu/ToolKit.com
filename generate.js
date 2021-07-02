@@ -112,6 +112,8 @@ function world()
 					document.getElementById("wola").appendChild(table);
 
 
+				}else {
+				   document.getElementById("wola").innerHTML="Incorrect Country Name! Try with different name";
 				}
 
 		}
